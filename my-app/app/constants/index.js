@@ -1,5 +1,5 @@
 import {
-    benefitIcon1,
+    // benefitIcon1,
     benefitIcon2,
     benefitIcon3,
     benefitIcon4,
@@ -37,6 +37,18 @@ import {
   } from "@/public/assets";
   
   import { yourlogo } from "@/public/assets";
+  import benefitIcon1 from "@/public/assets/benefits/icon-1.svg";
+  import work1 from "@/public/assets/work1.webp";
+  import work2 from "@/public/assets/work2.webp";
+  import work3 from "@/public/assets/work3.webp";
+  import work4 from "@/public/assets/work4.webp";
+  
+
+  import ophir from "@/public/assets/ophirlogo.jpg"
+  import getblock from "@/public/assets/getblock.png"
+  import openocean from "@/public/assets/openocean.png"
+  import skalez from "@/public/assets/skalez_logo.webp"
+  
   
   export const navigation = [
     {
@@ -72,12 +84,13 @@ import {
   
   export const notificationImages = [notification4, notification3, notification2];
   
-  export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+  export const companyLogos = [ophir, getblock, skalez, ophir, openocean];
   
   export const brainwaveServices = [
-    "Photo generating",
-    "Photo enhance",
-    "Seamless Integration",
+    "Deep Liquidity",
+    "Native cross-chain",
+    "Best Rates",
+    "Every Tokens swap-able"
   ];
   
   export const brainwaveServicesIcons = [
@@ -125,13 +138,13 @@ import {
   ];
   
   export const collabText =
-    "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+    "Aiming to build a unified decentralized financial ecosystem open to everyone in Web 3.0..";
   
   export const collabContent = [
     {
       id: "0",
-      title: "Seamless Integration",
-      text: collabText,
+      title: "DEX Aggregation",
+      text: "We aggregate liquidity across different dexes to provide the best prices for assets.",
     },
     {
       id: "1",
@@ -146,57 +159,57 @@ import {
   export const collabApps = [
     {
       id: "0",
-      title: "Figma",
-      icon: figma,
-      width: 26,
-      height: 36,
+      title: "Avax",
+      icon: "https://png.pngtree.com/png-clipart/20230817/original/pngtree-icon-of-avalanche-avax-coin-placed-on-a-white-backdrop-vector-picture-image_10974338.png",
+      width: 46,
+      height: 56,
     },
     {
       id: "1",
-      title: "Notion",
-      icon: notion,
-      width: 34,
-      height: 36,
+      title: "Ethereum",
+      icon: "https://www.pngall.com/wp-content/uploads/10/Ethereum-Logo-PNG-HD-Image.png",
+      width: 32,
+      height: 42,
     },
     {
       id: "2",
-      title: "Discord",
-      icon: discord,
+      title: "BNB",
+      icon: "https://cryptologos.cc/logos/bnb-bnb-logo.png",
       width: 36,
-      height: 28,
+      height: 38,
     },
     {
       id: "3",
-      title: "Slack",
-      icon: slack,
+      title: "Arb",
+      icon: "https://cryptologos.cc/logos/arbitrum-arb-logo.png",
       width: 34,
-      height: 35,
+      height: 45,
     },
     {
       id: "4",
-      title: "Photoshop",
-      icon: photoshop,
+      title: "Phantom",
+      icon: "https://cryptologos.cc/logos/fantom-ftm-logo.png?v=032",
       width: 34,
       height: 34,
     },
     {
       id: "5",
-      title: "Protopie",
-      icon: protopie,
+      title: "optimism",
+      icon: "https://cryptologos.cc/logos/optimism-ethereum-op-logo.png?v=032",
       width: 34,
       height: 34,
     },
     {
       id: "6",
-      title: "Framer",
-      icon: framer,
+      title: "polygon",
+      icon: "https://cryptologos.cc/logos/polygon-matic-logo.png?v=032",
       width: 26,
       height: 34,
     },
     {
       id: "7",
-      title: "Raindrop",
-      icon: raindrop,
+      title: "base",
+      icon: "https://assets-global.website-files.com/5fad86e1f5867747a5250efa/6405aa2ea2b6534048768292_base-logo.png",
       width: 38,
       height: 32,
     },
@@ -243,16 +256,18 @@ import {
       id: "0",
       title: "Ask anything",
       text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-      backgroundUrl: "./src/assets/benefits/card-1.svg",
-      iconUrl: benefitIcon1,
+      backgroundUrl: "./public/assets/benefits/card-1.svg",
+      // iconUrl: benefitIcon1,
+      iconUrl: work1,
       imageUrl: benefitImage2,
     },
     {
       id: "1",
       title: "Improve everyday",
       text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-      backgroundUrl: "./src/assets/benefits/card-2.svg",
-      iconUrl: benefitIcon2,
+      backgroundUrl: "./public/assets/benefits/card-2.svg",
+      // iconUrl: benefitIcon2,
+      iconUrl: work2,
       imageUrl: benefitImage2,
       light: true,
     },
@@ -260,16 +275,18 @@ import {
       id: "2",
       title: "Connect everywhere",
       text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-      backgroundUrl: "./src/assets/benefits/card-3.svg",
-      iconUrl: benefitIcon3,
+      backgroundUrl: "./public/assets/benefits/card-3.svg",
+      // iconUrl: benefitIcon3,
+      iconUrl: work3,
       imageUrl: benefitImage2,
     },
     {
       id: "3",
       title: "Fast responding",
       text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-      backgroundUrl: "./src/assets/benefits/card-4.svg",
-      iconUrl: benefitIcon4,
+      backgroundUrl: "./public/assets/benefits/card-4.svg",
+      // iconUrl: benefitIcon4,
+      iconUrl: work4,
       imageUrl: benefitImage2,
       light: true,
     },
@@ -277,7 +294,7 @@ import {
       id: "4",
       title: "Ask anything",
       text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-      backgroundUrl: "./src/assets/benefits/card-5.svg",
+      backgroundUrl: "./public/assets/benefits/card-5.svg",
       iconUrl: benefitIcon1,
       imageUrl: benefitImage2,
     },
@@ -285,7 +302,7 @@ import {
       id: "5",
       title: "Improve everyday",
       text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-      backgroundUrl: "./src/assets/benefits/card-6.svg",
+      backgroundUrl: "./public/assets/benefits/card-6.svg",
       iconUrl: benefitIcon2,
       imageUrl: benefitImage2,
     },

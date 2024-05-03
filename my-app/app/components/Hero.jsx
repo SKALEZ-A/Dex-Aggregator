@@ -20,7 +20,7 @@ const Hero = () => {
 
   return (
     <Section
-      className="pt-[12rem] -mt-[5.25rem] "
+      className="md:pt-[10rem] pt-[8rem] -mt-[5.25rem] "
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
@@ -29,7 +29,7 @@ const Hero = () => {
       
       <section className="lg:pt-8 flex flex-items justify-center mb-12  bg-center bg-cover  items-center overflow-hidden  " ref={parallaxRef}>
         <div className="z-[5] m-4 gap-5 container max-w-full justify-center items-center flex flex-col sm:flex-row sm:max-w-4xl md:max-w-5xl md:grid md:grid-cols-2">
-          <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem]   ">
+          <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem]  mt-4 md:mt-0 ">
             <h1 className="h1 mb-6">
               Unlock the power of &nbsp;Defi&nbsp; with {` `}
               <span className="inline-block relative">
