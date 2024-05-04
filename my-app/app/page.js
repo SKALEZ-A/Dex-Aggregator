@@ -1,5 +1,6 @@
 
 "use client";
+import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import ButtonGradient from "@/public/assets/svg/ButtonGradient";

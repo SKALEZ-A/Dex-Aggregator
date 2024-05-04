@@ -1,5 +1,5 @@
 "use client"
-import { useRouter, usePathname, useSearchParams } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import Image from 'next/image';
 
@@ -12,9 +12,9 @@ import { HamburgerMenu } from './design/Header';
 import { useState } from "react";
 
 const Header = () => {
-    const router = useRouter()
+    
     const pathname = usePathname()
-    const searchParams = useSearchParams()
+    
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
