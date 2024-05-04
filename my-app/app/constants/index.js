@@ -254,8 +254,8 @@ import {
   export const benefits = [
     {
       id: "0",
-      title: "Ask anything",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+      title: "Dex Aggregator",
+      text: "We aggregate the most liquidity sources across the widest selection of blockchains in DeFi, empowering our users to swap with the best possible market efficiency. ",
       backgroundUrl: "./public/assets/benefits/card-1.svg",
       // iconUrl: benefitIcon1,
       iconUrl: work1,
@@ -263,8 +263,8 @@ import {
     },
     {
       id: "1",
-      title: "Improve everyday",
-      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+      title: "Cross-chain swaps",
+      text: "Marble Protocol’s cross-chain swaps allow the seamless transfer and swapping of assets across multiple chains by utilizing the OpenOcean aggregation protocol.",
       backgroundUrl: "./public/assets/benefits/card-2.svg",
       // iconUrl: benefitIcon2,
       iconUrl: work2,
@@ -273,39 +273,24 @@ import {
     },
     {
       id: "2",
-      title: "Connect everywhere",
-      text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+      title: "Web3 wallet Dapp",
+      text: "Connect with the different crypto assets from anywhere, on any device, making it more accessible and convenient.",
       backgroundUrl: "./public/assets/benefits/card-3.svg",
       // iconUrl: benefitIcon3,
-      iconUrl: work3,
+      iconUrl: work4,
       imageUrl: benefitImage2,
     },
     {
       id: "3",
-      title: "Fast responding",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+      title: "Liquid Staking Aggregator",
+      text:  " Make the most of your liquid staking assets, maximize returns and analyse all potential and possible earn routes with the OpenOcean LST aggregator. ",
       backgroundUrl: "./public/assets/benefits/card-4.svg",
       // iconUrl: benefitIcon4,
-      iconUrl: work4,
+      iconUrl: work3,
       imageUrl: benefitImage2,
       light: true,
     },
-    {
-      id: "4",
-      title: "Ask anything",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-      backgroundUrl: "./public/assets/benefits/card-5.svg",
-      iconUrl: benefitIcon1,
-      imageUrl: benefitImage2,
-    },
-    {
-      id: "5",
-      title: "Improve everyday",
-      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-      backgroundUrl: "./public/assets/benefits/card-6.svg",
-      iconUrl: benefitIcon2,
-      imageUrl: benefitImage2,
-    },
+    
   ];
   
   export const socials = [

@@ -9,11 +9,21 @@ import HowToUse from "./components/HowToUse";
 import Collaboration from "./components/Collaboration";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import StarsCanvas from "./components/canvas/Stars";
 // import Works from "./components/Works";
 
 
 
 const DynamicWorks = dynamic(() => import("./components/Works"), {
+  ssr: false,
+});
+
+const DynamicContact = dynamic(() => import("./components/Contact"), {
+  ssr: false,
+});
+
+const DynamicStars = dynamic(() => import("./components/canvas/Stars"), {
   ssr: false,
 });
 
@@ -25,9 +35,13 @@ export default function Home() {
         <Header />
         <Hero />
         <Collaboration />
-        {/* <HowToUse /> */}
-        <DynamicWorks />
+        <HowToUse />
+        {/* <DynamicWorks /> */}
         <Services />
+        <div className="relative z-0">
+        <Contact />
+        <StarsCanvas />
+        </div>
         <Footer />
       </div>
       <ButtonGradient />

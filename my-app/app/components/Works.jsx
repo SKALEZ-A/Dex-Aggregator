@@ -17,17 +17,12 @@ import { fadeIn, textVariant, projects } from "../constants/motion/motion";
 
 const ProjectCard = ({
   index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-  previewUrl,
 }) => {
 
   
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="block relative bg-no-repeat bg-[length:100%_100%] p-0.5" >
+      {benefits.map((item) => (
       <Tilt
         options={{
           max: 45,
@@ -36,44 +31,30 @@ const ProjectCard = ({
         }}
         className="custom-glass p-5 rounded-2xl sm:w-[360px] w-full min-h-[17rem] "
       >
-        {/* <div className="relative w-full h-[230px]">
-          <Image
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
+      
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            
-            <div
-              className="rounded-t-xl relative group"
-              onClick={() => window.open(previewUrl, "_blank")}
-            >
-             
-            </div>
-          </div>
-        </div> */}
-
-        <div className="mt-5 relative z-2 block bg-no-repeat bg-[length:100%_100%]"  style={{
-                backgroundImage: `url(${image_url})`,
-              }}>
-          <h5 className="text-white font-bold h5 mb-5">{name}</h5>
-          <p className="body-2 mb-6 text-n-3">{description}</p>
-          {/* {benefits.map((item) => (
-           <div className="flex items-center mt-auto">
-                  <Image
-                    src={item.iconUrl}
-                    width={48}
-                    height={48}
-                    alt={item.title}
-                  />
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                    Explore more
-                  </p>
-                  
-                </div> 
-          ))} */}
-        </div>
+<div className="mt-5 relative z-2 block bg-no-repeat bg-[length:100%_100%]"  style={{
+    backgroundImage: `url(${image_url})`,
+}}
+key={item.id}
+>
+    <h5 className="text-white font-bold h5 mb-5">{item.title}</h5>
+    <p className="body-2 mb-6 text-n-3">{item.text}</p>
+    {/* Each div contains only one icon and "explore more" */}
+    
+        <div  className="flex items-center mt-auto">
+            <Image
+                src={item.iconUrl}
+                width={48}
+                height={48}
+                alt={item.title}
+            />
+            <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
+                Explore more
+            </p>
+        </div> 
+    
+</div>
 
         <div
                 className="absolute inset-0.5 bg-n-8"
@@ -93,7 +74,9 @@ const ProjectCard = ({
                 <GradientLight />
               </div>
       </Tilt>
+      ))}
     </motion.div>
+    
   );
 };
 
@@ -108,9 +91,9 @@ const Works = () => {
       
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+        
+          <ProjectCard />
+        
       </div>
       </div>
         
