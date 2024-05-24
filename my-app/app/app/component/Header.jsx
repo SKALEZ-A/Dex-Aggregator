@@ -72,8 +72,8 @@ const Header = () => {
         </nav>
 
         
-        <Button className="hidden lg:flex" href="#login">
-          Launch Dapp
+        <Button className="hidden lg:flex" href="#">
+          Dapp
         </Button>
 
         <Button

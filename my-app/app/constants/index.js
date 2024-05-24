@@ -75,7 +75,7 @@ import {
     {
       id: "4",
       title: "Launch Dapp",
-      url: "#login",
+      url: "/app",
       onlyMobile: true,
     },
   ];
