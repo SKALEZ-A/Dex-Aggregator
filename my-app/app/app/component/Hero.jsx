@@ -33,7 +33,7 @@ const Hero = () => {
         <>
 
             <div className='particles-container'>
-        <Particle />
+        {/* <Particle /> */}
         </div>
 
       <section className="lg:pt-8 flex flex-items justify-center bg-fixed bg-center bg-cover  items-center overflow-hidden  z-[99999]  ">        
@@ -43,7 +43,7 @@ const Hero = () => {
         {/* <div className=" top-0 left-0 right-0 bottom-0 bg-black/70 z-[2] flex-r " /> */}
         <div className='p-5 custom-glass h-screen w-full'>
 
-          <Iframe />
+          {/* <Iframe /> */}
         </div>
         
         {/* <div className="z-[5] m-4 gap-5 container max-w-full justify-center items-center flex flex-col sm:flex-row sm:max-w-4xl md:max-w-5xl "> */}
