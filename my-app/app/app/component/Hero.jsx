@@ -34,20 +34,18 @@ const Hero = () => {
 
             <div className='particles-container'>
         {/* <Particle /> */}
+        
         </div>
 
-      <section className="lg:pt-8 flex flex-items justify-center bg-fixed bg-center bg-cover  items-center overflow-hidden  z-[99999]  ">        
+      <section className="lg:pt-8 flex flex-items justify-center bg-fixed bg-center bg-cover  items-center overflow-hidden  z-[99999] mt-16 ">        
         
         <div className="z-[5] m-4 gap-5 container max-w-full justify-center items-center flex flex-col sm:flex-row sm:max-w-4xl md:max-w-5xl ">
         {/* overlay */}
         {/* <div className=" top-0 left-0 right-0 bottom-0 bg-black/70 z-[2] flex-r " /> */}
-        <div className='p-5 custom-glass h-screen w-full'>
-
-          {/* <Iframe /> */}
-        </div>
+        <div className="flex flex-col sm:flex-row w-full justify-between">
         
-        {/* <div className="z-[5] m-4 gap-5 container max-w-full justify-center items-center flex flex-col sm:flex-row sm:max-w-4xl md:max-w-5xl "> */}
-        <div className="z-[5] m-2 gap-5 container justify-center items-center flex custom-glass h-screen w-full">
+        
+        <div className="order-1 md:order-2 z-[5] m-2 gap-5 container justify-center items-center flex custom-glass  w-full h-screen">
         {isWidgetLoaded && (
         <Suspense fallback={<div>Loading...</div>}>
          <SquidWidget config={
@@ -104,9 +102,13 @@ const Hero = () => {
 } />
         </Suspense>
       )}
-          {/* <div className='h-screen'>
+        
+        </div>
+        <div className="order-2 md:order-1 p-5 custom-glass  w-full h-screen ">
 
-          </div> */}
+          <Iframe />
+        </div>
+        
         </div>
         </div>
       </section>
