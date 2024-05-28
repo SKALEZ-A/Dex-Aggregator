@@ -33,7 +33,7 @@ const Hero = () => {
         <>
 
             <div className='particles-container'>
-        {/* <Particle /> */}
+        <Particle />
         
         </div>
 
